@@ -1,0 +1,1 @@
+export {default as IModel1} from './IModel1'

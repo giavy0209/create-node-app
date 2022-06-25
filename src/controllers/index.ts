@@ -1,0 +1,1 @@
+export {default as Router1Controller} from './Router1Controller'

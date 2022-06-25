@@ -1,0 +1,32 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+      "skipLibCheck": true,
+      "module": "commonjs",
+      "target": "es2015",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "resolveJsonModule": true,
+      "sourceMap": false,
+      "outDir": "dist",
+      "baseUrl": ".",
+      "types": [
+        "node"
+      ],
+      "paths": {
+        "@": [""],
+        "controllers" : ["src/controllers"],
+        "routes" : ["src/routes"],
+        "models" : ["src/models"],
+        "interfaces" : ["src/interfaces"],
+        "abstracts" : ["src/abstracts"],
+        "services" : ["src/services"]
+      },
+      "noUnusedParameters": true,
+      "noUnusedLocals": true,
+      "watch": false
+    }
+  }
+  

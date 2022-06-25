@@ -1,0 +1,48 @@
+{
+  "name": "create-node-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx link-module-alias && nodemon dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "watch-node" : "tsc -watch",
+    "watch" :"concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-node\" \"npm start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giavy0209/create-node-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giavy0209/create-node-app/issues"
+  },
+  "homepage": "https://github.com/giavy0209/create-node-app#readme",
+  "dependencies": {
+    "@vercel/ncc": "^0.34.0",
+    "concurrently": "^7.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "module-alias": "^2.2.2",
+    "mongoose": "^6.4.0",
+    "socket.io": "^4.5.1",
+    "tsconfig-paths": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.0.0",
+    "typescript": "^4.7.4"
+  },
+  "_moduleAliases": {
+    "controllers": "./dist/src/controllers",
+    "middleware": "./dist/src/middleware",
+    "models": "./dist/src/models",
+    "routes": "./dist/src/routes",
+    "abstracts": "./dist/src/abstracts",
+    "interfaces": "./dist/src/interfaces",
+    "services": "./dist/src/services"
+  }
+}
